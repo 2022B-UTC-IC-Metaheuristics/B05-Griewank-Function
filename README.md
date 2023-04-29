@@ -15,19 +15,19 @@ La función se evalúa normalmente en el hipercubo xi ∈ [-600, 600], para todo
 ![](https://www.sfu.ca/~ssurjano/griewank3.png)
 
 ### Codigo:
-'''python {highlight=python}
+'''python
 
-def griewank_function(vector):
-    tam = len(vector)
-    sum = 0
-    prod = 1
+    def griewank_function(vector):
+        tam = len(vector)
+        sum = 0
+        prod = 1
 
-    for i in range(tam):
-        x = vector[i]
-        sum = sum + (x**2)/4000
-        prod = prod * math.cos(x/math.sqrt(i+1))
-        
-    return sum - prod + 1
+        for i in range(tam):
+            x = vector[i]
+            sum = sum + (x**2)/4000
+            prod = prod * math.cos(x/math.sqrt(i+1))
+
+        return sum - prod + 1
 
 
 # Contribuciones 
