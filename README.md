@@ -2,5 +2,5 @@
 
 
 # Contribuciones 
-Uribe Matus Miguel Angel 
+Uribe Matus Miguel Angel\\
 Lopez Ituarte Austin
