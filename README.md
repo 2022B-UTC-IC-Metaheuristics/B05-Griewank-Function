@@ -1,4 +1,6 @@
 # Griewank-Function
+
+![](https://www.sfu.ca/~ssurjano/griewank2.png)
 ### Descripción:
 *Dimensiones*: d
 
