@@ -28,6 +28,7 @@ def griewank_function(vector):
         prod = prod * math.cos(x/math.sqrt(i+1))
         
     return sum - prod + 1
+```
 
 # Contribuciones 
 Uribe Matus Miguel Angel
