@@ -15,8 +15,8 @@ La función se evalúa normalmente en el hipercubo xi ∈ [-600, 600], para todo
 ![](https://www.sfu.ca/~ssurjano/griewank3.png)
 
 ### Codigo:
-
-'def griewank_function(vector):
+'''python 
+def griewank_function(vector):
     tam = len(vector)
     sum = 0
     prod = 1
@@ -26,7 +26,7 @@ La función se evalúa normalmente en el hipercubo xi ∈ [-600, 600], para todo
         sum = sum + (x**2)/4000
         prod = prod * math.cos(x/math.sqrt(i+1))
         
-    return sum - prod + 1'
+    return sum - prod + 1
 
 
 # Contribuciones 
