@@ -15,7 +15,8 @@ La función se evalúa normalmente en el hipercubo xi ∈ [-600, 600], para todo
 ![](https://www.sfu.ca/~ssurjano/griewank3.png)
 
 ### Codigo:
-'''python 
+'''python {highlight=python}
+
 def griewank_function(vector):
     tam = len(vector)
     sum = 0
