@@ -1,36 +1,56 @@
 # Griewank-Function
-![](https://www.sfu.ca/~ssurjano/griewank.png)
+![Griewank Function](Images/griewankGraficas.png)
 
+## Función Griewank
+![Griewank Function](Images/griewankFuncionObjetivo.png)
 
-![](https://www.sfu.ca/~ssurjano/griewank2.png)
-### Descripción:
+## Descripción:
 *Dimensiones*: d
 
 La función Griewank tiene muchos mínimos locales generalizados, que se distribuyen regularmente. La complejidad se muestra en los gráficos ampliados.
 
-### Dominio de entrada:
+## Dominio de entrada:
 La función se evalúa normalmente en el hipercubo xi ∈ [-600, 600], para todo i = 1, ..., d.
 
-### Minimo Global:
+## Minimo Global:
 ![](https://www.sfu.ca/~ssurjano/griewank3.png)
 
-### Codigo:
+Como se puede observar en la imagen, el mínimo global de la función Griewank se encuentra en el punto (0,0,0,...,0) con un valor de 0. Es decir, si tenemos `1` dimensión, el mínimo global es `0` en el punto `(0)`, si tenemos 2 dimensiones, el mínimo global es `0` en el punto `(0,0)`, y así sucesivamente.
+
+## Codigo:
 
 ```Python
-def griewank_function(vector):
-    tam = len(vector)
-    sum = 0
-    prod = 1
+def f(x: list[float]) -> float:
+    """Cost function of the Griewank function.
 
-    for i in range(tam):
-        x = vector[i]
-        sum = sum + (x**2)/4000
-        prod = prod * math.cos(x/math.sqrt(i+1))
-        
-    return sum - prod + 1
+    Parameters
+    ----------
+    x : list[float]
+        List of the n decision variables to evaluate.
+
+    Returns
+    -------
+    float
+        The cost of the function evaluated in the given point(s).
+    """
+
+    # Get the N value
+    n = len(x)
+
+    return (
+        1
+        + sum([x[i] ** 2 / 4000 for i in range(n)])
+        - np.prod([np.cos(x[i] / np.sqrt(i + 1)) for i in range(n)])
+    )
+
 ```
 
 # Contribuciones 
-Uribe Matus Miguel Angel
+- Uribe Matus Miguel Angel
 
-Lopez Ituarte Austin
+- Lopez Ituarte Austin
+
+## 2024
+- Axel Isaac García González
+
+- Margarita Elorza Velásquez
