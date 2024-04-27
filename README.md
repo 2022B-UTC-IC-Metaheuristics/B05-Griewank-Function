@@ -1,8 +1,8 @@
 # Griewank-Function
-![Griewank Function](Images/griewankGraficas.png)
+![Griewank Function Graphics](Images/griewankGraficas.png)
 
 ## Función Griewank
-![Griewank Function](Images/griewankFuncionObjetivo.png)
+![Griewank Function ](Images/griewankFuncionObjetivo.png)
 
 ## Descripción:
 *Dimensiones*: d
@@ -13,7 +13,7 @@ La función Griewank tiene muchos mínimos locales generalizados, que se distrib
 La función se evalúa normalmente en el hipercubo xi ∈ [-600, 600], para todo i = 1, ..., d.
 
 ## Minimo Global:
-![](https://www.sfu.ca/~ssurjano/griewank3.png)
+![Griewank Optimo](Images/griewankOptimo.png)
 
 Como se puede observar en la imagen, el mínimo global de la función Griewank se encuentra en el punto (0,0,0,...,0) con un valor de 0. Es decir, si tenemos `1` dimensión, el mínimo global es `0` en el punto `(0)`, si tenemos 2 dimensiones, el mínimo global es `0` en el punto `(0,0)`, y así sucesivamente.
 
